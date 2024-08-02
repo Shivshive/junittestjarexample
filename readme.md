@@ -1,4 +1,4 @@
-### JunitTestJarExample [ Run Junit 5 Test Case via Command Line using Console Launcher API ]
+### JunitTestJarExample [Run Junit 5 Test Case via Command Line using Console Launcher API]
 
 - Exzmple to show case use of Console Launcher introduced in **Junit5**.
 
@@ -240,8 +240,8 @@ Here we are trying to run Junit 5 Test Cases which are archived in the JAR, via 
 	</dependencies>
 </project>
 ```
-
-**Command for Console Launcher To Execute Tests**
+--- 
+**Command for Console Launcher To Execute Tests** <br>
 **Old way** -- When we need to supply jars externally which are placed inside target\lib\* folder
 ```shell
 cd target
@@ -285,6 +285,7 @@ WARNING: Delegated to the 'execute' command.
          This behaviour has been deprecated and will be removed in a future release.
          Please use the 'execute' command directly.
 ```
+---
 
 **Recommended new way** -- when we have created a fat jar and using that to run our test cases
 ```shell
@@ -328,7 +329,9 @@ Test run finished after 2462 ms
 [         0 tests failed          ]
 
 ```
-*Note*:
+
+---
+***Note***:
 - application-0.0.1-SNAPSHOT-shaded.jar is a shaded jar (with all dependencies)
 - junittestjarexample-0.0.1-SNAPSHOT-tests.jar  contains all src\test classes.
 - junittestjarexample-0.0.1-SNAPSHOT.jar contains all src\main\java classes (without external dependencies).
