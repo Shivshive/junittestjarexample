@@ -335,7 +335,9 @@ Test run finished after 2462 ms
 - application-0.0.1-SNAPSHOT-shaded.jar is a shaded jar (with all dependencies)
 - junittestjarexample-0.0.1-SNAPSHOT-tests.jar  contains all src\test classes.
 - junittestjarexample-0.0.1-SNAPSHOT.jar contains all src\main\java classes (without external dependencies).
-- when using shaded jar we dont need to supply path for target\lib\* as fat jar contains all dependencies also we dont need to use the junittestjarexample-0.0.1-SNAPSHOT.jar as the fat jar contains all classes from src\main\java
+- when using shaded jar we dont need to supply path for target\lib\* as fat jar contains all dependencies also we dont need to use the junittestjarexample-0.0.1-SNAPSHOT.jar as the fat jar contains all classes from src\main\java.
+- for windows classpath seperator is ; and for linux or mac classpath seperator is :.
+- copy paste the junit-platform-console-standalone-1.9.3.jar inside target folder or give the path of this jar accordingly in the above commands.
 
 
 
