@@ -66,8 +66,8 @@ public class PlanSpec {
                                 new Job("Job Name", "JOBKEY") //job name and job key identifier
                                         .tasks(
                                                 gitRepositoryCheckoutTask(),
-                                                mavenTask("clean test"),
-                                                scriptTask()
+                                                mavenTask("clean test")
+//                                                scriptTask()
 
                                         )
                                         .artifacts(artifact())
