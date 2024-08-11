@@ -14,7 +14,7 @@ import com.atlassian.bamboo.specs.api.builders.repository.VcsRepository;
 import com.atlassian.bamboo.specs.builders.repository.git.GitRepository;
 import com.atlassian.bamboo.specs.builders.task.ScriptTask;
 import com.atlassian.bamboo.specs.builders.task.VcsCheckoutTask;
-
+import com.atlassian.bamboo.specs.api.builders.Variable;
 /**
  * Plan configuration for Bamboo.
  * Learn more on: <a href="https://confluence.atlassian.com/display/BAMBOO/Bamboo+Specs">https://confluence.atlassian.com/display/BAMBOO/Bamboo+Specs</a>
