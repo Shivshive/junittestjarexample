@@ -25,9 +25,9 @@ public class PlanSpec {
 
     private final static String PROJECT_NAME = "sampleproject";
     private final static String PROJECT_KEY = "SAM";
-    private final static String PLAN_NAME = "junittestjarexample_build";
+    private final static String PLAN_NAME = "junittestjarexample";
     private final static String REPOSITORY_NAME = "junittestjarexample\n";
-    private final static String PLAN_KEY = "SAM-JUN";
+    private final static String PLAN_KEY = "JUNS";
     private final static String REPO_URL = "https://github.com/Shivshive/junittestjarexample.git";
     private final static String BRANCH_NAME = "main";
     private final static String LINKED_REPO_NAME="junittestjarexample";
@@ -56,7 +56,8 @@ public class PlanSpec {
                 PLAN_NAME, PLAN_KEY)
                 .description("Plan created from (enter repository url of your plan)")
                 .enabled(true)
-                .variables(BambooConstant.variables())
+                .variables(new Variable("env","sqi"),
+                		new Variable("tag","@test"))
                 .planRepositories(
                         gitRepository()
                 )
