@@ -66,7 +66,7 @@ public class PlanSpec {
                                 new Job("Job Name", "JOBKEY") //job name and job key identifier
                                         .tasks(
                                                 gitRepositoryCheckoutTask(),
-                                                mavenTask("clean test")
+                                                mavenTask("mvn clean test")
 //                                                scriptTask()
 
                                         )
@@ -100,7 +100,7 @@ public class PlanSpec {
     }
 
     MavenTask mavenTask(String goalString) {
-        return new MavenTask().version3().goal(goalString).executableLabel("mvn");
+        return new MavenTask().version3().executableLabel("maven 3").goal(goalString);
     }
 
     Artifact artifact() {
