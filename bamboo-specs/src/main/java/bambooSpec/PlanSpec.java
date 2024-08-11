@@ -73,8 +73,8 @@ public class PlanSpec {
                                         .artifacts(artifact())
                         )
                 )
-                .linkedRepositories(LINKED_REPO_NAME)
-                .planRepositories(gitRepository());
+                .linkedRepositories(LINKED_REPO_NAME);
+//                .planRepositories(gitRepository());
     }
 
     VcsRepository gitRepository() {
