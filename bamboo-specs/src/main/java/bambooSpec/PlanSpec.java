@@ -70,7 +70,7 @@ public class PlanSpec {
 //                                                scriptTask()
 
                                         )
-                                        .artifacts(artifact())
+//                                        .artifacts(artifact())
                         )
                 )
                 .linkedRepositories(LINKED_REPO_NAME);
