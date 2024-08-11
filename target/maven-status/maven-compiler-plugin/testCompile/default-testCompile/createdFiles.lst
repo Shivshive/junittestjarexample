@@ -1,3 +1,4 @@
-com\example\Runner.class
 com\example\SeleniumTest.class
+pact\PactConsumerTest.class
+com\example\Runner.class
 com\example\StudentTest.class
