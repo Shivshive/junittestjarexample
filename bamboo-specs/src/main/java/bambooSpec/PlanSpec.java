@@ -100,7 +100,7 @@ public class PlanSpec {
     }
 
     MavenTask mavenTask(String goalString) {
-        return new MavenTask().version3().executableLabel("maven 3").goal(goalString);
+        return new MavenTask().executableLabel("MAVEN_3").goal(goalString);
     }
 
     Artifact artifact() {
